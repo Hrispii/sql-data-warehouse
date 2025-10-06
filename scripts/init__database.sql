@@ -1,0 +1,9 @@
+
+
+
+
+CREATE DATABASE DWH;
+
+CREATE SCHEMA bronzeLayer;
+CREATE SCHEMA silverLayer;
+CREATE SCHEMA goldLayer;
