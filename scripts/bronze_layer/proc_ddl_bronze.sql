@@ -3,6 +3,7 @@
 --     This procedure refreshes all CRM and ERP Bronze tables from CSV sources         --
 --     truncating old data, importing new datasets, and tracking execution times       --
 --     All progress and timings are neatly logged to the console for your review!      --
+--            You can activate it with: CALL bronzelayer.load_bronze();                --
 -----------------------------------------------------------------------------------------
 
 
