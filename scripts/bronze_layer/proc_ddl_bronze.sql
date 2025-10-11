@@ -1,11 +1,29 @@
----------------------------------- READ-ME ----------------------------------------------
---                     Welcome to the Bronze Layer Loader!                             --
---     This procedure refreshes all CRM and ERP Bronze tables from CSV sources         --
---     truncating old data, importing new datasets, and tracking execution times       --
---     All progress and timings are neatly logged to the console for your review!      --
---            You can activate it with: CALL bronzelayer.load_bronze();                --
+---------------------------------- README -----------------------------------------------
+-- Welcome to the Bronze Layer Loader!                                                 --
+-- This procedure ingests raw CRM and ERP datasets from external CSV sources           --
+-- into the Bronze Layer of the Data Warehouse. It performs a full refresh by          --
+-- truncating existing tables, reloading new data, and logging execution metrics.      --
+--                                                                                     --
+--                                Features:                                            --
+-- Loads raw source files (CSV) into the DWH staging zone                              --
+-- Measures and reports load time per table and total duration                         --
+-- Prints clear progress logs for monitoring and debugging                             --
+--                                                                                     --
+--                               Layer Purpose:                                        --
+-- The Bronze Layer acts as the raw data landing zone within the Medallion             --
+-- architecture. It holds unmodified, source-level data — the foundation for further   --
+-- transformation in the Silver Layer.                                                 --
+--                                                                                     --
+--                             Execution Command:                                      --
+-- To run the full ingestion pipeline:                                                 --
+-- CALL bronzelayer.load_bronze();                                                     --
+--                                                                                     --
+--                             Technical Overview:                                     --
+--  Language: PL/pgSQL (PostgreSQL Stored Procedure)                                   --
+--  Handles both CRM and ERP data imports                                              --
+--  Uses PostgreSQL’s COPY command for efficient bulk loading                          --
+--  Tracks execution time and prints detailed logs per dataset                         --
 -----------------------------------------------------------------------------------------
-
 
 CREATE OR REPLACE PROCEDURE bronzelayer.load_bronze()
 LANGUAGE plpgsql
