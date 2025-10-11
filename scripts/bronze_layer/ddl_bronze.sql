@@ -1,3 +1,16 @@
+--------------------------------- README -----------------------------------------------
+-- Welcome to the Bronze Layer Schema!                                                --
+-- This script defines all CRM and ERP tables that form the foundation of the         --
+-- Data Warehouse’s Bronze Layer. These tables act as the raw landing zone for        --
+-- external data ingestion, typically loaded directly from CSV sources                --
+--                                                                                    --
+--                            Layer Purpose:                                          --
+-- The Bronze Layer is the first stage in the Medallion Architecture                  --
+-- (Bronze → Silver → Gold). It stores raw, unprocessed data exactly as received      --
+-- from source systems — preserving source integrity and enabling full data lineage   --
+----------------------------------------------------------------------------------------
+
+
 DROP TABLE IF EXISTS bronzelayer.crm_cust_info CASCADE;
 CREATE TABLE bronzelayer.crm_cust_info(
 cst_id int,
