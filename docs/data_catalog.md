@@ -49,4 +49,18 @@
 |------------------|---------------|-----------------|
 | `order_number` | `NVARCHAR(50)` | Unique identifier for each sales order. |
 | `product_id` | `INT` | Foreign key referencing the sold product. |
-| `customer_id` | `INT` | Foreign key refere_
+| `customer_id` | `INT` | Foreign key referencing the customer who made the purchase. |
+| `order_date` | `DATE` | The date when the order was placed. |
+| `shipping_date` | `DATE` | The date when the order was shipped. |
+| `due_date` | `DATE` | The expected or actual payment due date. |
+| `sales_amount` | `DECIMAL(10,2)` | Total sales amount for the transaction. |
+| `quantity` | `INT` | Number of items sold. |
+| `price` | `DECIMAL(10,2)` | Price per item at the time of sale. |
+
+---
+
+### ⚙️ **Notes**
+
+* All views belong to the **Gold Layer**, representing the **cleaned, standardized, and analytics-ready** datasets.  
+* Data is aggregated and enriched from **Silver Layer** sources via transformation pipelines.  
+* Ensures **referential integrity**, **data consistency**, and **business-friendly structure** for reporting and analytics.
