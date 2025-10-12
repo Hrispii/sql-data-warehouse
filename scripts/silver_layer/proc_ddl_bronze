@@ -33,6 +33,7 @@
 -- enrichment, and full data standardization — ensuring a clean, consistent,           --
 -- and analytics-ready Silver Layer                                                    --
 --                                                                                     --
+--                                                                                     --
 -- You can check the quality of the data using the file "quality_cheack_silver" in the --
 -- tests folder                                                                        --
 -----------------------------------------------------------------------------------------
