@@ -48,7 +48,7 @@ The main objective is to develop a **centralized data warehouse** capable of del
 | Category | Tools Used |
 |-----------|-------------|
 | **Database** | PostgreSQL |
-| **Development** | SQL, T-SQL, Views, Joins, CASE, Window Functions |
+| **Development** | SQL, Views, Joins, CASE, Window Functions |
 | **Documentation** | Markdown (.md), Notion |
 | **Version Control** | Git, GitHub |
 | **Testing & Validation** | SQL Test Scripts, Data Profiling Queries |
@@ -63,11 +63,7 @@ data-warehouse/
 ├── datasets/                     # Raw source data (ERP, CRM)
 │
 ├── docs/                         # Documentation & architecture files
-│   ├── data_architecture.drawio   # Medallion architecture diagram
 │   ├── data_catalog.md            # Dataset catalog and metadata
-│   ├── data_flow.drawio           # End-to-end data flow
-│   ├── data_models.drawio         # Star schema model (fact & dimension tables)
-│   ├── naming_conventions.md      # Table and column naming rules
 │
 ├── scripts/                      # SQL transformation scripts
 │   ├── bronze/                    # Raw data ingestion
@@ -85,8 +81,7 @@ data-warehouse/
 ## 🚀 Getting Started
 
 ### 🧩 Requirements:
-- SQL Server (Express or Developer edition)
-- SQL Server Management Studio (SSMS)
+- PostgreSQL (Express or Developer edition)
 - Git (to clone and version the project)
 
 ### ⚙️ Steps to Run:
@@ -104,23 +99,7 @@ data-warehouse/
 
 ## 📊 Data Model (Star Schema)
 
-```
-             ┌────────────────────┐
-             │   dim_customer     │
-             └────────────────────┘
-                       ▲
-                       │
-┌────────────────┐     │     ┌────────────────┐
-│  dim_products  │─────┼────▶│   fact_sales   │
-└────────────────┘           └────────────────┘
-                       │
-                       ▼
-             ┌────────────────────┐
-             │    time dimension   │
-             └────────────────────┘
-```
-
----
+! images/projectSchema.png
 
 ## 🧪 Data Quality Checks
 
@@ -157,8 +136,7 @@ This project is licensed under the **MIT License** — you are free to use, modi
 ---
 
 ### 🤝 Connect with Me
-- 💼 [LinkedIn](https://linkedin.com)  
-- 💻 [GitHub](https://github.com/yourusername)  
-- ✉️ Email: your.email@example.com  
+- 💼 [LinkedIn](https://www.linkedin.com/in/belyaevaleksey/)  
+- ✉️ Email: AlekseyBA07@gmail.com
 
 > _“Data isn’t just numbers — it’s the story behind every decision.”_
