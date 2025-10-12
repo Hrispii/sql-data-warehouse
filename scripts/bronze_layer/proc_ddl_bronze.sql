@@ -23,6 +23,8 @@
 --  Handles both CRM and ERP data imports                                              --
 --  Uses PostgreSQL’s COPY command for efficient bulk loading                          --
 --  Tracks execution time and prints detailed logs per dataset                         --
+--                                                                                     --
+--                 Do not forget to type your path in each tables                      --
 -----------------------------------------------------------------------------------------
 
 CREATE OR REPLACE PROCEDURE bronzelayer.load_bronze()
@@ -52,7 +54,7 @@ BEGIN
     start_time := clock_timestamp();
     TRUNCATE bronzelayer.crm_cust_info;
     COPY bronzelayer.crm_cust_info
-        FROM 'C:\mylogovo\Courses\sql-data-warehouse-project-main\datasets\source_crm\cust_info.csv'
+        FROM 'TypeHereYourPath'
         DELIMITER ',' CSV HEADER;
     end_time := clock_timestamp();
     RAISE NOTICE 'Loaded crm_cust_info in % seconds', extract(epoch FROM (end_time - start_time));
@@ -65,7 +67,7 @@ BEGIN
     start_time := clock_timestamp();
     TRUNCATE bronzelayer.crm_prd_info;
     COPY bronzelayer.crm_prd_info
-        FROM 'C:\mylogovo\Courses\sql-data-warehouse-project-main\datasets\source_crm\prd_info.csv'
+        FROM 'TypeHereYourPath'
         DELIMITER ',' CSV HEADER;
     end_time := clock_timestamp();
     RAISE NOTICE 'Loaded crm_prd_info in % seconds', extract(epoch FROM (end_time - start_time));
@@ -102,7 +104,7 @@ BEGIN
     start_time := clock_timestamp();
     TRUNCATE bronzelayer.erp_cust_az12;
     COPY bronzelayer.erp_cust_az12
-        FROM 'C:\mylogovo\Courses\sql-data-warehouse-project-main\datasets\source_erp\cust_az12.csv'
+        FROM 'TypeHereYourPath'
         DELIMITER ',' CSV HEADER;
     end_time := clock_timestamp();
     RAISE NOTICE 'Loaded erp_cust_az12 in % seconds', extract(epoch FROM (end_time - start_time));
@@ -115,7 +117,7 @@ BEGIN
     start_time := clock_timestamp();
     TRUNCATE bronzelayer.erp_loc_a101;
     COPY bronzelayer.erp_loc_a101
-        FROM 'C:\mylogovo\Courses\sql-data-warehouse-project-main\datasets\source_erp\loc_a101.csv'
+        FROM 'TypeHereYourPath'
         DELIMITER ',' CSV HEADER;
     end_time := clock_timestamp();
     RAISE NOTICE 'Loaded erp_loc_a101 in % seconds', extract(epoch FROM (end_time - start_time));
@@ -128,7 +130,7 @@ BEGIN
     start_time := clock_timestamp();
     TRUNCATE bronzelayer.erp_px_cat_g1v2;
     COPY bronzelayer.erp_px_cat_g1v2
-        FROM 'C:\mylogovo\Courses\sql-data-warehouse-project-main\datasets\source_erp\px_cat_g1v2.csv'
+        FROM 'TypeHereYourPath'
         DELIMITER ',' CSV HEADER;
     end_time := clock_timestamp();
     RAISE NOTICE 'Loaded erp_px_cat_g1v2 in % seconds', extract(epoch FROM (end_time - start_time));
