@@ -47,9 +47,8 @@ The main objective is to develop a **centralized data warehouse** capable of del
 
 | Category | Tools Used |
 |-----------|-------------|
-| **Database** | Microsoft SQL Server |
+| **Database** | PostgreSQL |
 | **Development** | SQL, T-SQL, Views, Joins, CASE, Window Functions |
-| **Data Design** | Draw.io, Lucidchart (for data models and flows) |
 | **Documentation** | Markdown (.md), Notion |
 | **Version Control** | Git, GitHub |
 | **Testing & Validation** | SQL Test Scripts, Data Profiling Queries |
