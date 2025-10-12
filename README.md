@@ -24,7 +24,7 @@ The project follows the **Medallion Architecture** — a layered approach that o
 This project demonstrates a realistic end-to-end data warehouse pipeline including:
 
 - **Data Modeling:** Designing fact and dimension tables optimized for analytical queries.  
-- **ETL / ELT Pipelines:** Extracting data from CRM and ERP sources, transforming it in Silver Layer, and loading it into Gold Layer.  
+- **ETL Pipeline:** Extracting data from CRM and ERP sources, transforming it in Silver Layer, and loading it into Gold Layer.  
 - **Data Quality Management:** Handling duplicates, invalid values, and type casting.  
 - **Analytics & Reporting:** Providing sales, customer, and product insights directly from SQL queries.  
 - **Documentation:** Including Data Catalogs, testing scripts, and visual diagrams.
