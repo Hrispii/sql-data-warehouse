@@ -109,16 +109,6 @@ Each layer includes SQL-based validation tests:
 - Detect duplicates and inconsistencies  
 - Ensure referential integrity between fact and dimension tables  
 
----
-
-## 🌐 Use Cases
-
-This project is useful for:
-- **Employers / Recruiters:** Demonstrates solid understanding of SQL, ETL logic, and data modeling.  
-- **Students & Learners:** Example of a complete Medallion Data Warehouse architecture.  
-- **Analysts / Engineers:** Ready-to-adapt structure for analytics automation and BI integration.  
-
----
 
 ## ☕ About Me
 
