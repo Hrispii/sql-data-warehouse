@@ -99,7 +99,7 @@ data-warehouse/
 
 ## 📊 Data Model (Star Schema)
 
-![Project Schema](images/projectSchema.png) 
+![Project Schema](images/projectSchema.pg) 
 
 ## 🧪 Data Quality Checks
 
