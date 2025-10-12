@@ -24,7 +24,7 @@
 --  Language: PL/pgSQL (PostgreSQL Stored Procedure)                                   --
 --  Handles both CRM and ERP data sources                                              --
 --  Automatically measures and logs processing time per dataset                        --
---  Includes defensive logic (CASE, COALESCE, LEAD, data trimming, etc)               --
+--  Includes defensive logic (CASE, COALESCE, LEAD, data trimming, etc)                --
 --                                                                                     --
 --                               Data Cleaning                                         --
 -- This procedure performs comprehensive data cleaning and transformation,             --
@@ -32,6 +32,9 @@
 -- trimming spaces, type casting, outlier correction, deriving new columns,            --
 -- enrichment, and full data standardization — ensuring a clean, consistent,           --
 -- and analytics-ready Silver Layer                                                    --
+--                                                                                     --
+-- You can check the quality of the data using the file "quality_cheack_silver" in the --
+-- tests folder                                                                        --
 -----------------------------------------------------------------------------------------
 
 
