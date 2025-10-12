@@ -1,7 +1,7 @@
 # 🧠 Data Warehouse & Analytics System  
 Welcome to my Data Warehouse & Analytics project! 🚀  
 This repository demonstrates the complete process of building a **modern data warehouse** — from ingesting raw data to preparing analytics-ready datasets.  
-It’s designed both as a **portfolio project** for employers and as a **practical learning resource** for anyone interested in data engineering.
+It’s designed both as a **portfolio project** as a **practical learning resource** for anyone interested in data engineering.
 
 ---
 
