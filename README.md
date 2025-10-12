@@ -109,6 +109,7 @@ Each layer includes SQL-based validation tests:
 - Detect duplicates and inconsistencies  
 - Ensure referential integrity between fact and dimension tables  
 
+---
 
 ## ☕ About Me
 
